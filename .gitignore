@@ -1,0 +1,17 @@
+# Original Instagram exports: rights are pending, and they are large. Keep them local only.
+# Web-ready derivatives are in site/public/media/ and ARE committed (the build needs them).
+/kamarigoa_*.mp4
+/kamarigoa_*.jpg
+
+# Tool and OS artefacts
+.playwright-mcp/
+.DS_Store
+
+# Build output, dependencies and QA artefacts
+site/node_modules/
+site/dist/
+site/screenshots/
+site/*.log
+
+# The project uses npm (package-lock.json). Ignore the stray yarn lockfile from the scaffold.
+site/yarn.lock

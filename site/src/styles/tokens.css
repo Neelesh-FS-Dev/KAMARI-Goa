@@ -1,0 +1,47 @@
+/* Design tokens. Provisional palette from the brief; confirm against the official logo before launch. */
+:root {
+  /* Palette */
+  --c-teal: #064b5d;        /* Aegean Teal */
+  --c-ivory: #f5f0e5;       /* Coastal Ivory */
+  --c-ceramic: #739cb2;     /* Ceramic Blue */
+  --c-gold: #d9a64c;        /* Sunset Gold */
+  --c-terracotta: #d98560;  /* Terracotta */
+  --c-midnight: #081e29;    /* Midnight Ocean */
+
+  /* Semantic: day */
+  --bg: var(--c-ivory);
+  --fg: #12262e;
+  --fg-muted: #4c6470;
+  --line: rgb(18 38 46 / 0.16);
+  --accent: var(--c-teal);
+  --accent-fg: var(--c-ivory);
+  --focus: var(--c-gold);
+
+  /* Semantic: night sections (use class .section--night) */
+  --night-bg: var(--c-midnight);
+  --night-fg: var(--c-ivory);
+  --night-muted: rgb(245 240 229 / 0.72);
+  --night-line: rgb(245 240 229 / 0.18);
+
+  /* Type */
+  --font-display: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+  --font-ui: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fs-hero: clamp(3.25rem, 9vw, 9rem);
+  --fs-display: clamp(2.5rem, 6vw, 5.5rem);
+  --fs-h2: clamp(2rem, 4vw, 3.5rem);
+  --fs-body: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
+  --fs-small: 0.8125rem;
+  --lh-tight: 1.02;
+  --lh-body: 1.6;
+
+  /* Space and layout */
+  --gutter: clamp(1.25rem, 4vw, 4rem);
+  --max: 1440px;
+  --radius: 0;             /* editorial: square corners; no pill badges */
+  --header-h: 72px;
+
+  /* Motion tokens */
+  --dur-fast: 350ms;
+  --dur-base: 900ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
